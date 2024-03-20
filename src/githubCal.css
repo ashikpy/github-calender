@@ -1,13 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 p {
-  font-size: 5px;
+  font-size: 10px;
+}
+
+.github__master {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
 }
 
 .github-calendar {
-  /* border: 2px solid black; */
+  border: 3px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(7, 10px);
-  grid-template-rows: repeat(5, 10px);
-  gap: 0.2rem;
+  grid-template-columns: repeat(7, 30px);
+  grid-template-rows: repeat(5, 30px);
+  gap: 1rem;
+  row-gap: 1.5rem;
 }
 
 .github-calendar-fill {
@@ -20,24 +38,26 @@ p {
 
 .Done {
   background: greenyellow;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .Done,
 .Nope {
   display: grid;
   place-content: center;
+  border-radius: 5px;
+  border: 2px solid grey;
 }
 
 .Done {
   background: greenyellow;
-  width: 10px;
-  height: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 .Nope {
   width: 100%;
   height: 100%;
-  background: red;
+  border: 2px solid greenyellow;
 }

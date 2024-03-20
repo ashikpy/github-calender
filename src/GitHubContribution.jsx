@@ -68,26 +68,22 @@ function GitHubContribution({ username, token }) {
 
   contributionData.forEach((week) => {
     week.contributionDays.forEach((day) => {
-      contributionArray.push(day.contributionCount > 1);
+      contributionArray.push(day.contributionCount >= 1);
       contributionObj[day.date] = day.contributionCount;
     });
   });
 
-  console.log(contributionArray);
+  //   console.log(contributionArray);
 
   return (
-    <div>
-      <h1>GitHub Contribution</h1>
+    <div className="github__master">
+      <h3>GitHub Contribution</h3>
       <div className="github-calendar">
         {contributionArray.map((contribution, i) => {
           return contribution ? (
-            <p key={i} className="Done">
-              {i}
-            </p>
+            <div key={i} dummy={i} className={`Done`}></div>
           ) : (
-            <p key={i} className="Nope">
-              {i}
-            </p>
+            <div key={i} dummy={i} className="Nope "></div>
           );
         })}
       </div>
