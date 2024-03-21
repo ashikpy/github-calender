@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       <GitHubContribution
+        // bruh
         username="ashikpy"
         token="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"
       />
