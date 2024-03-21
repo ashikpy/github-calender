@@ -1,8 +1,25 @@
-# React + Vite
+# Github Calendar
+#### This React App is used mimic the github calendar from the commit history
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- To Start
+```bash
+npm i
+npm run dev
+```
+- At `App.jsx` for the argument of username, enter your username, 
+```jsx
+function App() {
+  return (
+    <div>
+      <GitHubContribution
+        username="ENTER_YOUR_GITHUB_USERNAME_HERE"
+        token="ENTER_YOUR_GITHUB_PERSONAL_ACCESS_TOKEN_HERE"
+      />
+    </div>
+  );
+}
+```
+- For the `API` go to your [github](https://github.com/). Navigate yourself to settings and go to developer settings and get your private key.
+- Pass the API into it.
+---
+### For the live preview visit [here](https://git-comit-calendar.vercel.app)
