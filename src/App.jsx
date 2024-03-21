@@ -5,8 +5,8 @@ function App() {
   return (
     <div>
       <GitHubContribution
-        username="ashikpy"
-        token="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"
+        username="ENTER_YOUR_GITHUB_USERNAME_HERE"
+        token="ENTER_YOUR_GITHUB_PERSONAL_ACCESS_TOKEN_HERE"
       />
     </div>
   );
